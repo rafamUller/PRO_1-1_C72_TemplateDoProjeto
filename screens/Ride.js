@@ -88,10 +88,10 @@ export default class RideScreen extends Component {
           //   SHORT
           // );
 
-          // ToastAndroid.show(
-          //   "Você alugou a bicicleta pela próxima 1 hora. Aproveite seu passeio!!",
-          //   ToastAndroid.SHORT
-          // );
+          ToastAndroid.show(
+            "Você alugou a bicicleta pela próxima 1 hora. Aproveite seu passeio!!",
+            ToastAndroid.SHORT
+          );
 
          // Alert.alert(
          //   "Você alugou a bicicleta pela próxima 1 hora. Aproveite seu passeio!!"
@@ -232,7 +232,7 @@ export default class RideScreen extends Component {
               //onChangeText={() => this.setState({ userId: text })}
               //onChangeText={this.setState({ userId: text })}
               //onChangeText={text => this.setState({ userId: text })}
-              //onChangeText={(text) => this.setState({ userId: text })}
+              onChangeText={(text) => this.setState({ userId: text })}
 
               placeholder={"Id do Usuário"}
               placeholderTextColor={"#FFFFFF"}
